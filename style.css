@@ -99,4 +99,7 @@ body
 		width: 100%;
 		float: none;
 	}
+	#main-header{
+		font-size: 4vw;
+	}
 }
