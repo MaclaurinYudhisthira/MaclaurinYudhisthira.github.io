@@ -44,9 +44,6 @@ table *{
         padding: 4px;
         font-size:14px;
     }
-    main{
-        background-color: red;
-    }
 }
 @media (max-width:550px){
     table *{
@@ -59,7 +56,7 @@ table *{
         height: auto;
         margin:auto;
     }
-    main{
-        background-color: green;
-    }
+    .b{
+        display: none;
+    } 
 }
