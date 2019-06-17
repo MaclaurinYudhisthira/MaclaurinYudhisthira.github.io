@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    width: 90%;
+    height:100vh;
+    margin: auto;
+    padding:10px; 
+    position: relative;
+    margin-top: 0px;
+}
+body{
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    background: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom right;
+    color: #FFFF00;
+    overflow: hidden;
+    
+}
+.mid{
+    width: 100%;
+    position: absolute;
+    top:40%;
+    left:0%;
+    transform: translate(-0%,-40%);
+}
+.text{
+    width: 80%;
+    float: left;
+    margin: 0 20px;
+    padding-left: 20px;
+}
+.img{
+    width: 15%;
+    float: left;
+    opacity: 0;
+    margin-right: -100px;
+    animation: img-ani 2s ease-in-out 0s 1 forwards ;
+}
+.nav{
+    position: absolute;
+    top:98%;
+    left:50%;
+    transform: translate(-0%,-98%);
+}
+#my-img
+{
+    width:150px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 4px solid rgb(0, 255, 106);
+    
+}
+.text #my-name
+{
+    font-size: 5rem;
+    display: inline-block;
+    opacity:0;
+    margin-left: 350px;
+    animation: text-ani1 2s ease-in-out .5s 1 forwards ;
+}
+.text #my-punch
+{
+    font-size: 1.5rem;
+    color: #fff;
+    position: absolute;
+    top:800%; 
+    animation: punch-ani1 1s ease-in-out 3s 1 forwards ;
+}
+#gift{
+    text-decoration: none;
+    color: #FFFF00;
+    font-size: 2rem;
+}
+@keyframes text-ani1{
+    0%{
+        opacity: 0;
+        margin-left: 350px;
+    }
+    100%{
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
+@keyframes text-ani2{
+    0%{
+        opacity: 0;
+        margin-left: 180px;
+    }
+    100%{
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
+@keyframes text-ani3{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes img-ani{
+    0%{
+        opacity: 0;
+        margin-right: -100px;
+    }
+    100%{
+        opacity: 1;
+        margin-right: 0px;
+    }
+}
+@keyframes punch-ani1{
+    0%{
+        top:800%;
+    }
+    100%{
+        top:60%;
+    }
+}
+@keyframes punch-ani2{
+    0%{
+        top:300%;
+    }
+    100%{
+        top:100%;
+    }
+}
+@media screen and (max-width: 1180px)
+{
+    .text #my-name
+    {
+        opacity: 1;
+        margin-left: 50px;
+        opacity: 0;
+        animation: text-ani3 2s ease-in-out .5s 1 forwards ;
+    }
+    .text #my-punch
+    {
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 980px)
+{
+    .text #my-name
+    {
+        font-size: 3.5rem;
+    }
+    .text{
+        margin-top:25px;
+        width: 70%;
+    }
+    .text #my-punch
+    {
+        animation: punch-ani1 .5s ease-in-out 3s 1 forwards ;
+    }
+}
+@media screen and (max-width: 780px)
+{
+    .img{
+        width: 100%;
+    }
+    .text{
+        width: 100%;
+        margin-top: 0px;
+    }
+    .text #my-name, .text #my-punch{
+        margin-left: 0;
+    }
+    .text #my-punch{
+        animation: punch-ani2 .5s ease-in-out 3s 1 forwards ;
+    }
+    .text #my-name{
+        opacity: 0;
+        margin-left: 180px;
+        animation: text-ani2 2s ease-in-out .5s 1 forwards ;
+    }
+    .img{
+        opacity: 1;
+        animation: none;
+    }
+}
+@media screen and (max-width: 680px)
+{
+    .img{
+        margin-left: 24px;
+    }
+    .text #my-name{
+        font-size: 2.5;
+        margin-left: 0;
+        opacity: 0;
+        animation: text-ani3 2s ease-in-out .5s 1 forwards ;
+    }
+}
+footer{
+    margin: 0;
+    padding: 0;
+    border: 2px solid #FFFF00;
+    text-align: center;
+    background:rgb(51,51,51);
+    padding: 10px;
+}
+footer li{
+    color: red;
+    display: inline-block;
+    
+    font-size: 1.2rem;
+}
+footer li a{
+    text-decoration: none;
+    color:#FFFF00;
+    padding:10px 20px;
+}
+footer li a:hover{
+    text-decoration: none;
+    color:#FFFF00;
+    background:#222;
+}
