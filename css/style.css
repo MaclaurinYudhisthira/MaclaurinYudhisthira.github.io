@@ -212,16 +212,34 @@ footer{
 footer li{
     color: red;
     display: inline-block;
-    
     font-size: 1.2rem;
+    
 }
 footer li a{
     text-decoration: none;
     color:#FFFF00;
     padding:10px 20px;
 }
-footer li a:hover{
+/* footer li a:hover{
     text-decoration: none;
     color:#FFFF00;
     background:#222;
+} */
+@media screen and (max-width: 480px)
+{
+    footer li 
+    {
+        display: block;
+        width: 100%;
+        padding:10px 20px;
+        border-bottom: 1px solid black;
+    }
+    footer{
+        padding: 0;
+    }
+    footer li a
+    {
+        width: 100%;
+        padding: 0;
+    }
 }
