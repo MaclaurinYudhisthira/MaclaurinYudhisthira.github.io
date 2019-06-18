@@ -1,0 +1,23 @@
+#box-area
+{
+    margin-top: 20px;
+} 
+#box-area .box
+{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+#box-area .box img
+{
+    width:90px;
+    height: auto;
+}
+footer
+{
+    padding: 20px;
+    margin-top: 20px;
+    color:red;
+    background-color: #e8491d;
+}
