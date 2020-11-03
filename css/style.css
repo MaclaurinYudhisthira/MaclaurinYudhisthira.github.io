@@ -196,7 +196,7 @@ section.about .row span{
   padding: 80px;
   border-radius: 50%;
   transform: translate(-50%,-50%);
-  z-index: 1;
+  z-index: 14;
 }
 p{
   font-size: 1.1rem;
@@ -455,7 +455,7 @@ p.f{
 }
 @media (max-width: 800px) {
   #images-wrapper {
-    width: 50vw;
+    width: 60vw;
     margin: auto;
     -moz-column-count: 1;
     -webkit-column-count: 1;
@@ -489,7 +489,7 @@ p.f{
     opacity: 1;
   }
   .caption-style-4 .caption-text{
-    width: 35vw;
+    width: 40vw;
     top: 30%;
     left: 15%;
   }
