@@ -594,9 +594,9 @@ p.f{
       -webkit-column-count: 1;
       column-count: 1;
   }
-  .a1{
+  /* .a1{
     background-color: black;
-  }
+  } */
   header h1 {
     font-size: 1.5rem;
   }
