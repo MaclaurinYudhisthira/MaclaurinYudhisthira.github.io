@@ -416,9 +416,9 @@ p.f{
 
 /* Media query for gallery */
 @media (max-width: 1000px) {
-  .a1{
+  /* .a1{
     background-color: red;
-  }
+  } */
   header h1 {
     font-size: 2.8rem;
   }
@@ -461,9 +461,9 @@ p.f{
     -webkit-column-count: 1;
     column-count: 1;
   }
-  .a1{
+  /* .a1{
     background-color: green;
-  }
+  } */
   header h1 {
     font-size: 2.5rem;
   }
@@ -526,9 +526,9 @@ p.f{
   }
 }
 @media (max-width: 650px) {
-  .a1{
+  /* .a1{
     background-color: orange;
-  }
+  } */
   header h1 {
     font-size: 2.2rem;
   }
